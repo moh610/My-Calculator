@@ -1,6 +1,6 @@
-//fait reference à la dernière valeur tapée par l'utilisateur
 import 'package:decimal/decimal.dart';
 
+//fait reference à la dernière valeur tapée par l'utilisateur
 String valeurActuelle = '';
 // liste des differents nombres tapée par l'utilisateur
 List<String> number = [];
@@ -421,7 +421,7 @@ void calculatrice(String val) {
         }
       }
     }
-    
+
   }
 }
 
