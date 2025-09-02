@@ -56,18 +56,14 @@ void calculatrice(String val) {
           (operation[operation.length-1]=='X' && val=='X')||(operation[operation.length-1]=='÷' && val=='÷'))
           || val=='=' ?operation:operation += val;
     }
-    // setState(() {
-    //
-    // });
+
   }
 
   // determine la presence du signe - devant le premier nombre
   else if(val=='(-'){
     number.length==0? operation+=val:number.length==1?operation='(-'+operation:operation;
     number.length==0 || number.length==1? sub=true:sub;
-    // setState(() {
-    //
-    // });
+
   }
 
   //vide toutes les variables
@@ -79,9 +75,7 @@ void calculatrice(String val) {
     resultat = 0;
     operation = '';
     sub=false;
-    // setState(() {
-    //
-    // });
+
   }
 
   //supprime un nombre à la fois
@@ -255,9 +249,6 @@ void calculatrice(String val) {
       sub=false;
     }
 
-    // setState(() {
-    //
-    // });
 
   }
 
@@ -277,7 +268,6 @@ void calculatrice(String val) {
     else if(number.length>=1 && val != '+' && val != '-' && val != '÷' && val != 'X' && val!='%'){
       int index=number.lastIndexOf(number.last);
       number[index]=number.last+val;
-      print("lt:${number.length}");
     }
 
     if (number.length == 2) {
@@ -431,10 +421,7 @@ void calculatrice(String val) {
         }
       }
     }
-
-    // setState(() {
-    //
-    // });
+    
   }
 }
 
